@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Bitter);
+
+body {
+  width: 750px;
+  margin: 0 auto;
+  font-family: "Open Sans";
+}
+
+a:hover, a:active, a:link, a:visited {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: black;
+}
+
+.article-content {
+  font-size: 15pt;
+  text-align: justify;
+}
+
+.logo {
+  font-family: "Open Sans";
+}
+
+h1 {
+  font-size: 40pt;
+}

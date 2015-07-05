@@ -1,0 +1,12 @@
+name = "Paper"
+license = "MIT"
+licenselink = "https://github.com/uetchy/hugo-paper/blob/master/LICENSE.md"
+description = ""
+homepage = "https://github.com/uetchy/hugo-paper"
+tags = ["minimal", "paper"]
+features = ["", ""]
+min_version = 0.13
+
+[author]
+  name = "Yasuaki Uechi"
+  homepage = "https://github.com/uetchy"

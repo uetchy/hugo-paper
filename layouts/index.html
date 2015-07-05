@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+<h1 class="logo">{{ .Site.Title }}</h1>
+
+<section>
+  {{ range .Data.Pages }}
+    <article>
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <time pubdate>{{ .Date.Format "Feb 2, 2006" | upper }}</time>
+    </article>
+  {{ end }}
+</section>
+
+{{ partial "footer.html" . }}

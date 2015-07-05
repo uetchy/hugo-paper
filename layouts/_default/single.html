@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+<h1><a href="/">{{ .Site.Title }}</a></h1>
+
+<section>
+  <article>
+    <h2>{{ .Title }}</h1>
+    <div class="article-content">
+      {{ .Content }}
+    </div>
+  </article>
+</section>
+
+{{ partial "footer.html" . }}
