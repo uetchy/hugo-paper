@@ -1,10 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Arvo);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700|Arvo);
 
 body {
   width: 750px;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: "Arvo";
+  font-family: "Open Sans";
 }
 
 @media screen and (max-width: 790px) {
