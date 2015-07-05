@@ -5,5 +5,6 @@ Well-simplified theme for [Hugo](http://gohugo.io)
 ## Setup
 
 ```
-$ git clone <> themes/hugo-paper
+$ git clone https://github.com/uetchy/hugo-paper.git themes/hugo-paper
+$ hugo server -t hugo-paper
 ```
