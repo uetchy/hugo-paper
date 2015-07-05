@@ -1,9 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Bitter);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Arvo);
 
 body {
   width: 750px;
   margin: 0 auto;
-  font-family: "Open Sans";
+  padding: 0 20px;
+  font-family: "Arvo";
+}
+
+@media screen and (max-width: 790px) {
+  body {
+    width: auto;
+    margin: 0;
+  }
 }
 
 a:hover, a:active, a:link, a:visited {
@@ -15,9 +23,39 @@ a:hover, a:active {
   color: black;
 }
 
-.article-content {
+.article-list-item {
+  margin: 30px 0 0;
+}
+
+.article-list-item-title {
+  margin: 0 0 7px;
+}
+
+.article-title {
+  font-size: 30pt;
+}
+
+.article-content p {
   font-size: 15pt;
   text-align: justify;
+  line-height: 1.6em;
+}
+
+.article-content h1 {
+  font-size: 25pt;
+  /*font-weight: 400;*/
+  margin-top: 50px;
+}
+
+.article-content img {
+  width: 100%;
+  height: auto;
+}
+
+.article-content blockquote {
+  border-left: 5px solid red;
+  padding-left: 20px;
+  margin: 0;
 }
 
 .logo {
