@@ -4,7 +4,7 @@ licenselink = "https://github.com/uetchy/hugo-paper/blob/master/LICENSE.md"
 description = ""
 homepage = "https://github.com/uetchy/hugo-paper"
 tags = ["minimal", "paper"]
-features = ["", ""]
+features = ["blog"]
 min_version = 0.13
 
 [author]
