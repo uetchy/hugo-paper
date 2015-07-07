@@ -24,25 +24,15 @@ a:hover, a:active {
 }
 
 .header {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu {
   list-style: none;
   padding: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -92,5 +82,3 @@ a:hover, a:active {
 h1 {
   font-size: 40pt;
 }
-
-/*# sourceMappingURL=index.css.map */

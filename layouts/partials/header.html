@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Normalize.js -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+
   <link rel="stylesheet" href="/css/index.css">
+
+  <!-- Highlight.js -->
   <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css">
   <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- Evil Icons -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/evil-icons/1.7.2/evil-icons.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/evil-icons/1.7.2/evil-icons.min.js"></script>
 
   {{ if .RSSlink }}
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
@@ -17,3 +25,15 @@
   <title>{{ .Title }}</title>
 </head>
 <body>
+<header class="header">
+  <h1 class="logo">{{ .Site.Title }}</h1>
+  <nav>
+    <ul class="menu">
+      {{ range .Site.Params.menu.item }}
+        <li class="menu-item">
+          <a href="{{ .url }}">{{ .title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

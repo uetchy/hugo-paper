@@ -1,0 +1,11 @@
+baseurl = "http://hugo.spf13.com/"
+title = "Hugo Paper"
+theme = "hugo-paper"
+
+[params]
+  [[params.menu.item]]
+    title = "Github"
+    url = "https://github.com/uetchy"
+  [[params.menu.item]]
+    title = "Twitter"
+    url = "https://twitter.com/uetschy"
