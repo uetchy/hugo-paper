@@ -26,7 +26,11 @@
 </head>
 <body>
 <header class="header">
-  <h1 class="logo">{{ .Site.Title }}</h1>
+  {{ if .IsPage }}
+    <h1 class="logo"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+  {{ else }}
+    <h1 class="logo">{{ .Site.Title }}</h1>
+  {{ end }}
   <nav>
     <ul class="menu">
       {{ range .Site.Params.menu.item }}

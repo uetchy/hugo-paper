@@ -2,7 +2,9 @@
 
 <section>
   <article>
-    <time pubdate>{{ .Date.Format "Feb 2, 2006" | upper }}</time>
+    {{ if isset .Params "date" }}
+      <time pubdate>{{ .Date.Format "Feb 2, 2006" | upper }}</time>
+    {{ end }}
     <h2 class="article-title">{{ upper .Title }}</h1>
     <div class="article-content">
       {{ .Content }}
