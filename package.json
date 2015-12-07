@@ -1,10 +1,10 @@
 {
   "name": "hugo-paper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Well-simplified theme for Hugo",
   "scripts": {
     "build": "gulp build",
-    "watch": "gulp watch"
+    "start": "gulp watch"
   },
   "repository": {
     "type": "git",
