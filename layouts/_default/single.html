@@ -2,11 +2,13 @@
 
 <section>
   <article>
-    {{ if isset .Params "date" }}
-      <time pubdate>{{ .Date.Format "Feb 2, 2006" | upper }}</time>
-    {{ end }}
-    <h2 class="article-title">{{ upper .Title }}</h1>
-    <div class="article-content">
+    <hgroup class="article__metadata">
+      <h2 class="article__title">{{ .Title }}</h1>
+      {{ if eq .Type "post" }}
+        <h3 class="article__pubdate"><time pubdate>{{ .Date.Format "Febuary 2, 2006" }}</time></h3>
+      {{ end }}
+    </hgroup>
+    <div class="article__content">
       {{ .Content }}
     </div>
   </article>

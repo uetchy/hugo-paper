@@ -1,13 +1,13 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700|Arvo);
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700);
 
 body {
-  width: 750px;
+  width: 800px;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: "Open Sans";
+  font-family: 'PT Serif', serif;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 840px) {
   body {
     width: auto;
     margin: 0;
@@ -15,12 +15,29 @@ body {
 }
 
 a:hover, a:active, a:link, a:visited {
-  color: red;
+  color: black;
   text-decoration: none;
 }
 
-a:hover, a:active {
-  color: black;
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6em;
+}
+
+h1 {
+  font-size: 25pt;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 15pt;
+  font-weight: normal;
 }
 
 .header {
@@ -28,6 +45,13 @@ a:hover, a:active {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .menu {
@@ -36,49 +60,58 @@ a:hover, a:active {
   display: flex;
 }
 
-.menu-item:not(:first-child) {
+.menu__item:not(:first-child) {
   margin-left: 20px;
 }
 
-.article-list-item {
+.article-list__item {
   margin: 30px 0 30px;
 }
 
-.article-list-item-title {
+.article-list__item__title {
   margin: 0 0 7px;
 }
 
-.article-title {
-  font-size: 30pt;
+.article__metadata {
+  text-align: center;
+  margin: 20px 0;
 }
 
-.article-content p {
-  font-size: 15pt;
+.article__title {
+  font-size: 28pt;
+}
+
+.article__pubdate {
+  color: #989898;
+  font-size: 14pt;
+}
+
+.article__content p {
+  font-size: 14pt;
   /*text-align: justify;*/
   line-height: 1.6em;
+  margin: 1.5em 0;
 }
 
-.article-content h1 {
-  font-size: 25pt;
-  /*font-weight: 400;*/
-  margin-top: 50px;
+.article__content a {
+  border-bottom: 1px dotted;
 }
 
-.article-content img {
+.article__content h1 {
+  margin: 1.5em 0 0.5em;
+}
+
+.article__content h2 {
+  margin: 1.5em 0 0.5em;
+}
+
+.article__content img {
   width: 100%;
   height: auto;
 }
 
-.article-content blockquote {
+.article__content blockquote {
   border-left: 5px solid red;
   padding-left: 20px;
   margin: 0;
-}
-
-.logo {
-  font-family: "Open Sans";
-}
-
-h1 {
-  font-size: 40pt;
 }

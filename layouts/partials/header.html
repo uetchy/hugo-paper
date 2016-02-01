@@ -22,19 +22,27 @@
     <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
   {{ end }}
 
-  <title>{{ .Title }}</title>
+  <title>
+    {{ if .IsPage }}
+      {{ .Title }} — {{ .Site.Title }}
+    {{ else }}
+      {{ .Site.Title }}
+    {{ end }}
+  </title>
 </head>
 <body>
 <header class="header">
   {{ if .IsPage }}
-    <h1 class="logo"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+    <a class="logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
   {{ else }}
-    <h1 class="logo">{{ .Site.Title }}</h1>
+    <div class="logo">
+      {{ .Site.Title }}
+    </div>
   {{ end }}
   <nav>
     <ul class="menu">
       {{ range .Site.Params.menu.item }}
-        <li class="menu-item">
+        <li class="menu__item">
           <a href="{{ .url }}">{{ .title }}</a>
         </li>
       {{ end }}

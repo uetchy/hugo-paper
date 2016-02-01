@@ -1,10 +1,10 @@
 {{ partial "header.html" . }}
 
 <section>
-  {{ range .Data.Pages }}
-    <article class="article-list-item">
-      <h2 class="article-list-item-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-      <time pubdate>{{ .Date.Format "Jan 2, 2006" | upper }}</time>
+  {{ range where .Data.Pages "Type" "post" }}
+    <article class="article-list__item">
+      <h2 class="article-list__item__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <time pubdate>{{ .Date.Format "January 2, 2006" | upper }}</time>
     </article>
   {{ end }}
 </section>
