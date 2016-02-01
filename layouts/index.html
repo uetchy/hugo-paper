@@ -4,7 +4,7 @@
   {{ range where .Data.Pages "Type" "post" }}
     <article class="article-list__item">
       <h2 class="article-list__item__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-      <time pubdate>{{ .Date.Format "January 2, 2006" | upper }}</time>
+      <time class="article-list__item__pubdate" pubdate>{{ .Date.Format "January 2, 2006" | upper }}</time>
     </article>
   {{ end }}
 </section>

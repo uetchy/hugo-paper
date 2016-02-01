@@ -26,7 +26,7 @@ h1, h2, h3, p {
 }
 
 h1 {
-  font-size: 25pt;
+  font-size: 23pt;
   font-weight: bold;
 }
 
@@ -69,12 +69,16 @@ h3 {
 }
 
 .article-list__item__title {
-  margin: 0 0 7px;
+  /*margin: 0 0 2px;*/
+}
+
+.article-list__item__pubdate {
+  /*margin: 0 0 7px;*/
 }
 
 .article__metadata {
   text-align: center;
-  margin: 20px 0;
+  margin: 50px 0 25px;
 }
 
 .article__title {
@@ -90,7 +94,7 @@ h3 {
   font-size: 14pt;
   /*text-align: justify;*/
   line-height: 1.6em;
-  margin: 1.5em 0;
+  margin: 1.4em 0;
 }
 
 .article__content a {
@@ -98,11 +102,11 @@ h3 {
 }
 
 .article__content h1 {
-  margin: 1.5em 0 0.5em;
+  margin: 1.4em 0 0.5em;
 }
 
 .article__content h2 {
-  margin: 1.5em 0 0.5em;
+  margin: 1.4em 0 0.5em;
 }
 
 .article__content img {
