@@ -1,5 +1,5 @@
 {{ if isset .Site.Params "GoogleAnalyticsID" }}
-  {{ partial "google_analytics.html" }}
+  {{ partial "google_analytics.html" .Site.Params.GoogleAnalyticsID }}
 {{ end }}
 </body>
 </html>
