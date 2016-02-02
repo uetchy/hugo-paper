@@ -1,2 +1,5 @@
+{{ if isset .Site.Params "GoogleAnalyticsID" }}
+  {{ partial "google_analytics.html" }}
+{{ end }}
 </body>
 </html>
