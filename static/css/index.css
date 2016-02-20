@@ -107,6 +107,14 @@ h3 {
   margin: 1.4em 0;
 }
 
+.article__content ul {
+  padding-left: 20px;
+}
+
+.article__content li {
+  font-size: 14pt;
+}
+
 .article__content a {
   border-bottom: 1px dotted;
 }
